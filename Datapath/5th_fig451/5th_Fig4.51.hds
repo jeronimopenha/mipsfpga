@@ -1,0 +1,101 @@
+# hades.models.Design file
+#  
+[name] Mips_Pipeline
+[components]
+hades.models.Design id_ex 15600 1200 @N 1001 Subdesign_fig451/IdEx3.hds
+ufv_mipsfpga.edition_5.Mux21 memtoreg 46200 15600 @N 1001 32 UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU_B 1.0E-8
+hades.models.Design if_id 2400 8400 @N 1001 Subdesign_fig451/if_id.hds
+ufv_mipsfpga.edition_5.Mux21 reg_dst 21000 25200 @N 1001 5 UUUUU_B 1.0E-8
+hades.models.io.Ipin clk -9000 25800 @N 1001 null U
+ufv_mipsfpga.edition_5.RAMclk datamem 35400 16200 @N 1001 4096 32 5th_Fig451_MemEx1/data.ram
+ufv_mipsfpga.edition_5.RegPC PC_reg -7800 15000 @N 1001 32 00000000000000000000000000001100_B 1.0E-8
+hades.models.rtlib.io.Constant Cte4 -7800 10200 @N 1001 32 00000000000000000000000000000100_B 1.0E-8
+ufv_mipsfpga.edition_5.RegBank regbank 8400 14400 @N 1001 32 32 5th_fig451_MemEx1/regbank.rom
+hades.models.io.Ipin enable -9000 24600 @N 1001 null U
+ufv_mipsfpga.edition_5.Mux21 i9 -9600 15000 @N 1001 32 UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU_B 1.0E-8
+ufv_mipsfpga.edition_5.Add i8 22200 9000 @N 1001 32 UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU_B 1.0E-8
+ufv_mipsfpga.edition_5.fig451.ControlUnit i7 10200 2400 @N 1001 16 UUUUUUUUUUUUUUUU_B 1.0E-8
+ufv_mipsfpga.edition_5.Subset i6 34200 16800 @N 1001 32 13 2 XXXXXXXXXXXX_B 1.0E-8
+ufv_mipsfpga.edition_5.InstructionMem i16 -4200 15600 @N 1001 4096 32 5th_fig451_MemEx1/inst.rom
+ufv_mipsfpga.edition_5.Subset i5 21600 21600 @N 1001 32 5 0 XXXXXX_B 1.0E-8
+ufv_mipsfpga.edition_5.ShiftLeft i4 19800 11400 @N 1001 16 11111111111111111111111111111100_B 1.0E-8
+ufv_mipsfpga.edition_5.Subset i15 7200 4200 @N 1001 32 31 26 XXXXXX_B 1.0E-8
+ufv_mipsfpga.edition_5.fig451.AluControl i3 22800 21600 @N 1001 1.0E-8
+ufv_mipsfpga.edition_5.Subset i14 6600 16200 @N 1001 32 20 16 XXXXX_B 1.0E-8
+ufv_mipsfpga.edition_5.fig451.Alu i2 25800 14400 @N 1001 32 00000000000000000000000000000000_B 1.0E-8
+ufv_mipsfpga.edition_5.Mux21 Alusrc 21000 16800 @N 1001 32 UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU_B 1.0E-8
+ufv_mipsfpga.edition_5.Subset i13 6600 15000 @N 1001 32 25 21 XXXXX_B 1.0E-8
+hades.models.gates.And2 i1 34200 13200 @N 1001 1.0E-8
+ufv_mipsfpga.edition_5.Subset i12 8400 24600 @N 1001 32 20 16 XXXXX_B 1.0E-8
+ufv_mipsfpga.edition_5.Subset i11 8400 27000 @N 1001 32 15 11 XXXXX_B 1.0E-8
+ufv_mipsfpga.edition_5.Subset i0 -5400 15600 @N 1001 32 13 2 000000000011_B 1.0E-8
+ufv_mipsfpga.edition_5.Add PC_add -3000 7800 @N 1001 32 UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU_B 1.0E-8
+ufv_mipsfpga.edition_5.Subset i10 8400 22200 @N 1001 32 15 0 XXXXXXXXXXXXXXXX_B 1.0E-8
+hades.models.Design mem_wb 42600 6000 @N 1001 Subdesign_fig451/MEMWBreg.hds
+hades.models.Design ex_mem 30600 3600 @N 1001 Subdesign_fig451/EXMEMreg.hds
+hades.models.io.Ipin reset -9000 23400 @N 1001 null U
+hades.models.Design sign 11400 21000 @N 1001 SignExtend2.hds
+[end components]
+[signals]
+hades.signals.SignalStdLogicVector n39 32 3 ex_mem aluOut1 i6 A mem_wb aluOut 4 2 33600 17400 33000 17400 2 34200 17400 33600 17400 2 33600 17400 33600 22800 2 33600 22800 42600 22800 1 33600 17400 
+hades.signals.SignalStdLogicVector n38 12 2 i6 Y datamem Address 1 2 34800 17400 35400 17400 0 
+hades.signals.SignalStdLogic1164 n37 2 id_ex MuxAlu Alusrc S 5 2 18000 7800 25800 7800 2 25800 7800 25800 13800 2 25800 13800 22200 13800 2 22200 13800 21600 13800 2 21600 13800 21600 16800 0 
+hades.signals.SignalStdLogicVector n36 32 2 mem_wb aluOut1 memtoreg A0 3 2 45000 22800 45600 22800 2 45600 22800 45600 16200 2 45600 16200 46200 16200 0 
+hades.signals.SignalStdLogicVector n35 32 2 id_ex AddSeq1 i8 A 1 2 18000 10200 22200 10200 0 
+hades.signals.SignalStdLogicVector n34 32 2 id_ex DRS1 i2 A 1 2 18000 15600 25800 15600 0 
+hades.signals.SignalStdLogic1164 n33 2 i2 port_zero ex_mem zero 1 2 28200 16200 30600 16200 0 
+hades.signals.SignalStdLogicVector n32 2 2 id_ex AluOp i3 ALUOp 4 2 18000 7200 28800 7200 2 28800 7200 28800 24600 2 28800 24600 24600 24600 2 24600 24600 24600 24000 0 
+hades.signals.SignalStdLogicVector n31 32 2 regbank ReadData1 id_ex DRS 1 2 14400 15600 15600 15600 0 
+hades.signals.SignalStdLogicVector n30 32 2 regbank ReadData2 id_ex DRT 1 2 14400 17400 15600 17400 0 
+hades.signals.SignalStdLogic1164 WE_wire 5 enable Y id_ex WE mem_wb WE if_id WE ex_mem WE 0 0 
+hades.signals.SignalStdLogicVector n29 5 2 reg_dst Y ex_mem rd 2 2 22200 26400 30600 26400 2 22200 26400 22200 26400 0 
+hades.signals.SignalStdLogicVector n28 5 2 id_ex ARD1 reg_dst A1 3 2 18000 27600 20400 27600 2 20400 27600 20400 27000 2 20400 27000 21000 27000 0 
+hades.signals.SignalStdLogicVector n27 5 2 id_ex ART1 reg_dst A0 3 2 18000 25200 20400 25200 2 20400 25200 20400 25800 2 20400 25800 21000 25800 0 
+hades.signals.SignalStdLogicVector n26 32 2 if_id PC4_out id_ex AddSeq 1 2 15600 10200 4800 10200 0 
+hades.signals.SignalStdLogicVector n25 32 2 i2 port_OutAluResult ex_mem aluOut 1 2 28200 17400 30600 17400 0 
+hades.signals.SignalStdLogicVector n24 32 3 id_ex DRT1 ex_mem rt Alusrc A0 4 2 18000 17400 19200 17400 2 19200 17400 19200 21000 2 19200 21000 30600 21000 2 19200 17400 21000 17400 1 19200 17400 
+hades.signals.SignalStdLogicVector n23 32 4 id_ex SigExt1 i5 A i4 A Alusrc A1 5 2 20400 22200 21600 22200 2 18000 22200 20400 22200 2 20400 18600 20400 13800 2 20400 22200 20400 18600 2 20400 18600 21000 18600 2 20400 18600 20400 22200 
+hades.signals.SignalStdLogicVector n55 12 2 i0 Y i16 Addr 1 2 -4200 16200 -4800 16200 0 
+hades.signals.SignalStdLogicVector n22 3 2 id_ex MEM1 ex_mem m 5 2 18000 4800 29400 4800 2 29400 4800 29400 5400 2 29400 5400 30000 5400 2 30000 5400 30000 7200 2 30000 7200 30600 7200 0 
+hades.signals.SignalStdLogicVector n54 5 2 mem_wb rd1 regbank WriteRegister 5 2 45000 26400 45600 26400 2 45600 26400 45600 30600 2 45600 30600 6600 30600 2 6600 30600 6600 18000 2 6600 18000 8400 18000 0 
+hades.signals.SignalStdLogicVector n21 4 2 i3 OutALUcontrol i2 port_opCode 2 2 27000 22200 26400 22200 2 27000 22200 27000 18600 0 
+hades.signals.SignalStdLogicVector n53 32 2 ex_mem addBranch1 i9 A1 5 2 33000 11400 34800 11400 2 34800 11400 34800 0 2 34800 0 -10800 0 2 -10800 0 -10800 16800 2 -10800 16800 -9600 16800 0 
+hades.signals.SignalStdLogicVector n20 6 2 i5 Y i3 Funct 1 2 22800 22200 22200 22200 0 
+hades.signals.SignalStdLogic1164 n52 2 i1 Y i9 S 4 2 37800 14400 37800 600 2 37800 600 -9000 600 2 -9000 600 -9000 15000 2 -9000 15000 -9000 15000 0 
+hades.signals.SignalStdLogic1164 n50 2 mem_wb RegWrite regbank RegWrite 7 2 45000 7200 45600 7200 2 45600 7200 45600 -600 2 45600 -600 9600 -600 2 9600 -600 9600 13200 2 9600 13200 11400 13200 2 11400 13200 12000 13200 2 12000 13200 12000 14400 0 
+hades.signals.SignalStdLogicVector n9 4 2 i7 EX id_ex EX 3 2 13800 6600 15000 6600 2 15000 6600 15000 7200 2 15000 7200 15600 7200 0 
+hades.signals.SignalStdLogicVector n8 32 2 sign out id_ex SigExt 3 2 13800 22800 14400 22800 2 14400 22800 14400 22200 2 14400 22200 15600 22200 0 
+hades.signals.SignalStdLogicVector n7 16 2 i10 Y sign in 1 2 9000 22800 11400 22800 0 
+hades.signals.SignalStdLogicVector n6 5 2 i12 Y id_ex ART 1 2 9000 25200 15600 25200 0 
+hades.signals.SignalStdLogicVector n5 5 2 i11 Y id_ex ARD 1 2 9000 27600 15600 27600 0 
+hades.signals.SignalStdLogicVector n4 32 3 PC_reg Q i0 A PC_add A 6 2 -6000 16200 -5400 16200 2 -6600 16200 -6000 16200 2 -6000 16200 -6000 13200 2 -6000 13200 -8400 13200 2 -8400 13200 -8400 9000 2 -8400 9000 -3000 9000 1 -6000 16200 
+hades.signals.SignalStdLogicVector n3 32 2 datamem ReadData mem_wb PortreadData 1 2 41400 17400 42600 17400 0 
+hades.signals.SignalStdLogicVector n2 32 2 Cte4 Y PC_add B 4 2 -6000 12000 -6600 12600 2 -6600 12600 -3600 12600 2 -3600 12600 -3600 11400 2 -3600 11400 -3000 11400 0 
+hades.signals.SignalStdLogicVector n1 32 2 i16 Inst if_id inst_in 1 2 1800 18600 2400 18600 0 
+hades.signals.SignalStdLogicVector n0 32 2 i9 Y PC_reg D 1 2 -8400 16200 -7800 16200 0 
+hades.signals.SignalStdLogicVector n19 2 2 id_ex WB1 ex_mem wb 3 2 18000 2400 30000 2400 2 30000 2400 30000 4800 2 30000 4800 30600 4800 0 
+hades.signals.SignalStdLogic1164 clk_wire 8 clk Y id_ex CLK mem_wb CLK if_id CLK datamem CLK ex_mem CLK PC_reg CLK regbank CLK 0 0 
+hades.signals.SignalStdLogicVector n18 6 2 i15 Y i7 opcode 1 2 7800 4800 10200 4800 0 
+hades.signals.SignalStdLogic1164 n49 2 mem_wb MemtoReg memtoreg S 2 2 46800 15600 46800 7800 2 46800 7800 45000 7800 0 
+hades.signals.SignalStdLogicVector n17 32 7 if_id inst_out i14 A i10 A i12 A i11 A i13 A i15 A 13 2 4800 18600 6000 18600 2 6000 18600 6000 16800 2 6000 16800 6600 16800 2 6000 18600 6000 22800 2 6000 22800 8400 22800 2 6000 22800 6000 25200 2 6000 25200 8400 25200 2 6000 25200 6000 27600 2 6000 27600 8400 27600 2 6000 16800 6000 15600 2 6000 15600 6600 15600 2 6000 15600 6000 4800 2 6000 4800 7200 4800 5 6000 22800 6000 25200 6000 18600 6000 15600 6000 16800 
+hades.signals.SignalStdLogicVector n48 32 2 mem_wb readData1 memtoreg A1 2 2 45000 17400 45600 17400 2 45600 17400 46200 17400 0 
+hades.signals.SignalStdLogicVector n16 32 2 Alusrc Y i2 B 2 2 22800 18000 22200 18000 2 22800 18000 25800 18000 0 
+hades.signals.SignalStdLogicVector n15 5 2 i14 Y regbank ReadRegister2 1 2 7200 16800 8400 16800 0 
+hades.signals.SignalStdLogicVector n47 5 2 ex_mem rd1 mem_wb rd 1 2 33000 26400 42600 26400 0 
+hades.signals.SignalStdLogicVector n14 5 2 i13 Y regbank ReadRegister1 1 2 7200 15600 8400 15600 0 
+hades.signals.SignalStdLogic1164 n46 2 ex_mem MemWrite datamem MemWrite 2 2 38400 16200 38400 7200 2 38400 7200 33000 7200 0 
+hades.signals.SignalStdLogicVector n13 32 2 i8 SUM ex_mem addBranch 1 2 24600 11400 30600 11400 0 
+hades.signals.SignalStdLogicVector n45 2 2 ex_mem wb1 mem_wb wb 3 2 33000 4800 42000 4800 2 42000 4800 42000 7200 2 42000 7200 42600 7200 0 
+hades.signals.SignalStdLogicVector n12 32 2 i4 OutSL i8 B 1 2 21000 12600 22200 12600 0 
+hades.signals.SignalStdLogic1164 n44 2 ex_mem MemRead datamem MemRead 4 2 33000 7800 42000 7800 2 42000 7800 42000 23400 2 42000 23400 38400 23400 2 38400 23400 38400 22200 0 
+hades.signals.SignalStdLogic1164 n36_0_0 2 id_ex RegDst reg_dst S 6 2 18000 6600 29400 6600 2 29400 6600 29400 25200 2 29400 25200 23400 25200 2 23400 25200 23400 24600 2 23400 24600 21600 24600 2 21600 24600 21600 25200 0 
+hades.signals.SignalStdLogicVector n11 2 2 i7 WB id_ex WB 3 2 13800 3000 15000 3000 2 15000 3000 15000 2400 2 15000 2400 15600 2400 0 
+hades.signals.SignalStdLogicVector n43 32 2 memtoreg Y regbank WriteData 6 2 48000 18000 48000 30000 2 48000 30000 7200 30000 2 7200 30000 7200 19200 2 48000 18000 48000 16800 2 48000 16800 47400 16800 2 7200 19200 8400 19200 0 
+hades.signals.SignalStdLogic1164 R_wire 7 reset Y id_ex R mem_wb R if_id R PC_reg NR ex_mem R i7 R 0 0 
+hades.signals.SignalStdLogicVector n10 3 2 i7 M id_ex MEM 1 2 13800 4800 15600 4800 0 
+hades.signals.SignalStdLogicVector n42 32 2 ex_mem rt1 datamem WriteData 1 2 33000 21000 35400 21000 0 
+hades.signals.SignalStdLogic1164 n41 2 ex_mem Branch i1 A 3 2 33000 6600 33600 6600 2 33600 6600 33600 13800 2 33600 13800 34200 13800 0 
+hades.signals.SignalStdLogic1164 n40 2 ex_mem zero1 i1 B 3 2 33000 16200 33600 16200 2 33600 16200 33600 15000 2 33600 15000 34200 15000 0 
+hades.signals.SignalStdLogicVector n1_0 32 3 PC_add SUM if_id PC4_in i9 A0 6 2 600 10200 2400 10200 2 600 10200 600 6600 2 600 6600 -10200 6600 2 -10200 6600 -10200 15600 2 -10200 15600 -9600 15600 2 600 10200 -600 10200 1 600 10200 
+[end signals]
+[end]

@@ -1,0 +1,25 @@
+# hades.models.Design file
+#  
+[name] if_id
+[components]
+hades.models.rtlib.register.RegRE inst_mem 10200 15000 @N 1001 32 00000000000000000000000000000010_B 1.0E-8
+hades.models.rtlib.register.RegRE PC4_mem 10200 7800 @N 1001 32 00000000000000000000000000000010_B 1.0E-8
+hades.models.io.Ipin R 7200 -1200 @N 1001  U
+hades.models.rtlib.io.IpinVector PC4_in 7200 6000 @N 1001 32 00000000000000000000000000000010_B 1.0E-9 0
+hades.models.rtlib.io.IpinVector inst_in 7200 13200 @N 1001 32 00000000000000000000000000000010_B 1.0E-9 0
+hades.models.rtlib.io.OpinVector inst_out 22800 18000 @N 1001 32 1.0E-9 0
+hades.models.io.Ipin WE 7200 1200 @N 1001  U
+hades.models.io.Ipin flush -3600 -1200 @N 1001 null U
+hades.models.io.Ipin CLK 7200 0 @N 1001  U
+hades.models.rtlib.io.OpinVector PC4_out 24000 13200 @N 1001 32 1.0E-9 0
+[end components]
+[signals]
+hades.signals.SignalStdLogic1164 n7 3 CLK Y PC4_mem CLK inst_mem CLK 5 2 10200 9000 8400 9000 2 7200 0 8400 0 2 8400 16200 10200 16200 2 8400 0 8400 9000 2 8400 16200 8400 9000 1 8400 9000 
+hades.signals.SignalStdLogicVector n5 32 2 inst_in Y inst_mem D 2 2 7200 13200 12000 13200 2 12000 13200 12000 15000 0 
+hades.signals.SignalStdLogicVector n4 32 2 PC4_mem Q PC4_out A 4 2 12000 10200 12000 12000 2 12000 12000 13200 12000 2 13200 12000 13200 13200 2 13200 13200 24000 13200 0 
+hades.signals.SignalStdLogicVector n3 32 2 PC4_in Y PC4_mem D 2 2 12000 7800 12000 6000 2 12000 6000 7200 6000 0 
+hades.signals.SignalStdLogic1164 n2 3 WE Y inst_mem ENA PC4_mem ENA 5 2 7200 1200 9000 1200 2 9000 8400 9000 15600 2 9000 15600 10200 15600 2 9000 1200 9000 8400 2 9000 8400 10200 8400 1 9000 8400 
+hades.signals.SignalStdLogicVector n1 32 2 inst_mem Q inst_out A 2 2 12000 17400 12000 18000 2 12000 18000 22800 18000 0 
+hades.signals.SignalStdLogic1164 n0 3 R Y inst_mem NR PC4_mem NR 5 2 7200 -1200 7800 -1200 2 7800 9600 7800 16800 2 7800 16800 10200 16800 2 7800 -1200 7800 9600 2 7800 9600 10200 9600 1 7800 9600 
+[end signals]
+[end]

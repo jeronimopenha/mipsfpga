@@ -1,0 +1,15 @@
+hades.symbols.BboxRectangle  0 0 1200 2400
+hades.symbols.Rectangle  0 0 1200 2400
+hades.symbols.PortLabel 1000 1100 3 Ad
+hades.symbols.BusPortSymbol 1200 1200 Ad
+hades.symbols.PortLabel 150 2300 R
+hades.symbols.PortSymbol 600 2400 R
+hades.symbols.PortLabel 150 1900 CLK
+hades.symbols.PortSymbol 0 1800 CLK
+hades.symbols.PortLabel 300 350 WE
+hades.symbols.PortSymbol 600 0 WE
+hades.symbols.PortLabel 150 1100 in
+hades.symbols.BusPortSymbol 0 1200 in
+hades.symbols.InstanceLabel 300 700 PC
+hades.symbols.ClassLabel 300 1600 PC 
+hades.symbols.Label 350 1300 PC

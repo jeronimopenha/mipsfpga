@@ -1,0 +1,15 @@
+# hades.models.Design file
+#  
+[name] PC4_ALU
+[components]
+hades.models.rtlib.io.IpinVector B 13200 5400 @N 1001 32 UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU_B 1.0E-9 0
+hades.models.rtlib.io.IpinVector A 12600 7200 @N 1001 32 UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU_B 1.0E-9 0
+hades.models.rtlib.arith.Add PC4Add 12000 9600 @N 1001 32 00000000000000000000000000000000_B 1.0E-8
+hades.models.rtlib.io.OpinVector AddResult 15600 13800 @N 1001 32 1.0E-9 0
+[end components]
+[signals]
+hades.signals.SignalStdLogicVector n2 32 2 PC4Add SUM AddResult A 2 2 15600 13800 14400 13800 2 14400 13800 14400 12000 0 
+hades.signals.SignalStdLogicVector n1 32 2 A Y PC4Add A 2 2 12600 7200 13200 7200 2 13200 7200 13200 9600 0 
+hades.signals.SignalStdLogicVector n0 32 2 B Y PC4Add B 2 2 13200 5400 15600 5400 2 15600 5400 15600 9600 0 
+[end signals]
+[end]

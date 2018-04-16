@@ -1,0 +1,38 @@
+hades.symbols.BboxRectangle  0 0 2400 25200
+hades.symbols.Rectangle  0 0 2400 25200
+hades.symbols.Polyline 2 0 2400 2400 2400
+hades.symbols.Polyline 2 0 4800 2400 4800
+hades.symbols.PortLabel 150 1350 wb
+hades.symbols.BusPortSymbol 0 1200 wb
+hades.symbols.PortLabel 150 3750 m
+hades.symbols.BusPortSymbol 0 3600 m
+hades.symbols.PortLabel 150 12750 zero
+hades.symbols.PortSymbol 0 12600 zero
+hades.symbols.PortLabel -600 14350 aluOut
+hades.symbols.BusPortSymbol 0 13800 aluOut
+hades.symbols.PortLabel 150 17550 rt
+hades.symbols.BusPortSymbol 0 17400 rt
+hades.symbols.PortLabel 150 22950 rd
+hades.symbols.BusPortSymbol 0 22800 rd
+hades.symbols.PortLabel 300 25100 WE
+hades.symbols.PortSymbol 600 25200 WE
+hades.symbols.PortLabel 900 25100 CLK
+hades.symbols.PortSymbol 1200 25200 CLK
+hades.symbols.PortLabel 1750 25100 R
+hades.symbols.PortSymbol 1800 25200 R
+hades.symbols.PortLabel 2250 1350 3 wb1
+hades.symbols.BusPortSymbol 2400 1200 wb1
+hades.symbols.PortLabel 2250 4350 3 MemWrite
+hades.symbols.PortSymbol 2400 4200 MemWrite
+hades.symbols.PortLabel 2250 3750 3 MemRead
+hades.symbols.PortSymbol 2400 3600 MemRead
+hades.symbols.PortLabel 2250 12750 3 zero1
+hades.symbols.PortSymbol 2400 12600 zero1
+hades.symbols.PortLabel 2550 14350 3 aluOut1
+hades.symbols.BusPortSymbol 2400 13800 aluOut1
+hades.symbols.PortLabel 2250 17550 3 rt1
+hades.symbols.BusPortSymbol 2400 17400 rt1
+hades.symbols.PortLabel 2250 22950 3 rd1
+hades.symbols.BusPortSymbol 2400 22800 rd1
+hades.symbols.InstanceLabel 0 750 EXMEMregs
+hades.symbols.ClassLabel 0 450 EX/MEM.regs

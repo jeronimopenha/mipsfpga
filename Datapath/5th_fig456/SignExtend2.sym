@@ -1,0 +1,10 @@
+hades.symbols.BboxRectangle  -200 -200 2700 3800
+hades.symbols.Rectangle  0 0 2400 3600
+hades.symbols.PortLabel 2800 1800 3 out
+hades.symbols.BusPortSymbol 2400 1800 out
+hades.symbols.PortLabel -400 1800 in
+hades.symbols.BusPortSymbol 0 1800 in
+hades.symbols.InstanceLabel 0 800 signex
+hades.symbols.ClassLabel 0 2800 Signextend
+hades.symbols.Label 800 1800 Sign-
+hades.symbols.Label 600 2100 extend

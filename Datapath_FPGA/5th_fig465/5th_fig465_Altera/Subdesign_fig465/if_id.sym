@@ -1,0 +1,20 @@
+hades.symbols.BboxRectangle  0 0 2400 20400
+hades.symbols.Rectangle  0 0 2400 20400
+hades.symbols.PortLabel 2350 10050 3 inst_out
+hades.symbols.BusPortSymbol 2400 10200 inst_out
+hades.symbols.PortLabel 2450 4050 3 PC4_out
+hades.symbols.BusPortSymbol 2400 3600 PC4_out
+hades.symbols.PortLabel 0 10650 inst_in
+hades.symbols.BusPortSymbol 0 10200 inst_in
+hades.symbols.PortLabel 0 4050 PC4_in
+hades.symbols.BusPortSymbol 0 3600 PC4_in
+hades.symbols.PortLabel 900 100 WE
+hades.symbols.PortSymbol 1200 0 WE
+hades.symbols.PortLabel 900 20300 CLK
+hades.symbols.PortSymbol 1200 20400 CLK
+hades.symbols.PortLabel 1750 20300 R
+hades.symbols.PortSymbol 1800 20400 R
+hades.symbols.PortLabel 0 19100 flush
+hades.symbols.PortSymbol 0 19200 flush
+hades.symbols.InstanceLabel 150 3450 if_id
+hades.symbols.ClassLabel 150 450 if_id

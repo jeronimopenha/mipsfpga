@@ -1,0 +1,53 @@
+hades.symbols.BboxRectangle  0 0 2400 27600
+hades.symbols.Rectangle  0 0 2400 27600
+hades.symbols.Polyline 2 0 2400 2400 2400
+hades.symbols.Polyline 2 0 4800 2400 4800
+hades.symbols.Polyline 2 0 7200 2400 7200
+hades.symbols.PortLabel 250 1300 WB
+hades.symbols.BusPortSymbol 0 1200 WB
+hades.symbols.PortLabel 250 3700 MEM
+hades.symbols.BusPortSymbol 0 3600 MEM
+hades.symbols.PortLabel 250 6100 EX
+hades.symbols.BusPortSymbol 0 6000 EX
+hades.symbols.PortLabel -500 9500 AddSeq
+hades.symbols.BusPortSymbol 0 9000 AddSeq
+hades.symbols.PortLabel 250 14500 DRS
+hades.symbols.BusPortSymbol 0 14400 DRS
+hades.symbols.PortLabel 250 16300 DRT
+hades.symbols.BusPortSymbol 0 16200 DRT
+hades.symbols.PortLabel -500 21400 SigExt
+hades.symbols.BusPortSymbol 0 21000 SigExt
+hades.symbols.PortLabel 250 24100 ART
+hades.symbols.BusPortSymbol 0 24000 ART
+hades.symbols.PortLabel 250 26500 ARD
+hades.symbols.BusPortSymbol 0 26400 ARD
+hades.symbols.PortLabel 300 27500 WE
+hades.symbols.PortSymbol 600 27600 WE
+hades.symbols.PortLabel 900 27500 CLK
+hades.symbols.PortSymbol 1200 27600 CLK
+hades.symbols.PortLabel 1750 27500 R
+hades.symbols.PortSymbol 1800 27600 R
+hades.symbols.PortLabel 2200 1300 3 WB1
+hades.symbols.BusPortSymbol 2400 1200 WB1
+hades.symbols.PortLabel 2200 3700 3 MEM1
+hades.symbols.BusPortSymbol 2400 3600 MEM1
+hades.symbols.PortLabel 2200 5500 3 RegDst
+hades.symbols.PortSymbol 2400 5400 RegDst
+hades.symbols.PortLabel 2200 6100 3 AluOp
+hades.symbols.PortSymbol 2400 6000 AluOp
+hades.symbols.PortLabel 2200 6700 3 MuxAlu
+hades.symbols.PortSymbol 2400 6600 MuxAlu
+hades.symbols.PortLabel 2700 9500 3 AddSeq1
+hades.symbols.BusPortSymbol 2400 9000 AddSeq1
+hades.symbols.PortLabel 2200 14500 3 DRS1
+hades.symbols.BusPortSymbol 2400 14400 DRS1
+hades.symbols.PortLabel 2200 16300 3 DRT1
+hades.symbols.BusPortSymbol 2400 16200 DRT1
+hades.symbols.PortLabel 2700 21400 3 SigExt1
+hades.symbols.BusPortSymbol 2400 21000 SigExt1
+hades.symbols.PortLabel 2200 24100 3 ART1
+hades.symbols.BusPortSymbol 2400 24000 ART1
+hades.symbols.PortLabel 2200 26500 3 ARD1
+hades.symbols.BusPortSymbol 2400 26400 ARD1
+hades.symbols.InstanceLabel 800 750 idex
+hades.symbols.ClassLabel 800 450 IdEx

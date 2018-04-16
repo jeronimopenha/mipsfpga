@@ -1,0 +1,19 @@
+# hades.models.Design file
+#  
+[name] PC_reg
+[components]
+hades.models.rtlib.io.OpinVector Ad 14400 13200 @N 1001 32 1.0E-9 0
+hades.models.rtlib.register.RegRE PC 12000 9600 @N 1001 32 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX_B 1.0E-8
+hades.models.io.Ipin R 9600 12000 @N 1001  U
+hades.models.rtlib.io.IpinVector in 11400 8400 @N 1001 32 00000000000000000000000000000000_B 1.0E-9 0
+hades.models.io.Ipin WE 9600 9600 @N 1001  U
+hades.models.io.Ipin CLK 9600 10800 @N 1001 null U
+[end components]
+[signals]
+hades.signals.SignalStdLogic1164 n4 2 R Y PC NR 3 2 9600 12000 10800 12000 2 10800 12000 10800 11400 2 10800 11400 12000 11400 0 
+hades.signals.SignalStdLogic1164 n3 2 CLK Y PC CLK 1 2 12000 10800 9600 10800 0 
+hades.signals.SignalStdLogic1164 n2 2 WE Y PC ENA 3 2 9600 9600 10800 9600 2 10800 9600 10800 10200 2 10800 10200 12000 10200 0 
+hades.signals.SignalStdLogicVector n1 32 2 PC Q Ad A 2 2 13800 12000 13800 13200 2 13800 13200 14400 13200 0 
+hades.signals.SignalStdLogicVector n0 32 2 in Y PC D 2 2 11400 8400 13800 8400 2 13800 8400 13800 9600 0 
+[end signals]
+[end]

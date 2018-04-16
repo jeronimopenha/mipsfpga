@@ -1,0 +1,11 @@
+# hades.models.Design file
+#  
+[name] Const
+[components]
+hades.models.rtlib.io.OpinVector Const 1800 15000 @N 1001 8 1.0E-9 0
+hades.models.rtlib.io.Constant i0 -600 12000 @N 1001 8 00000000_B 1.0E-8
+[end components]
+[signals]
+hades.signals.SignalStdLogicVector n0 8 2 i0 Y Const A 2 2 1200 13800 1200 15000 2 1200 15000 1800 15000 0 
+[end signals]
+[end]

@@ -1,0 +1,17 @@
+# hades.models.Design file
+#  
+[name] mux21_32bits
+[components]
+hades.models.io.Ipin S 7200 7200 @N 1001  U
+hades.models.rtlib.muxes.Mux21 i0 8400 6000 @N 1001 32 00000000000000000000000000000001_B 1.0E-8
+hades.models.rtlib.io.OpinVector out 10200 9600 @N 1001 32 1.0E-9 0
+hades.models.rtlib.io.IpinVector In1 8400 4800 @N 1001 32 00000000000000000000000000000001_B 1.0E-9 0
+hades.models.rtlib.io.IpinVector In0 8400 3600 @N 1001 32 00000000000000000000000000000000_B 1.0E-9 0
+[end components]
+[signals]
+hades.signals.SignalStdLogicVector n3 32 2 i0 Y out A 1 2 10200 7800 10200 9600 0 
+hades.signals.SignalStdLogicVector n2 32 2 In1 Y i0 A0 2 2 8400 4800 10800 4800 2 10800 4800 10800 6000 0 
+hades.signals.SignalStdLogicVector n1 32 2 In0 Y i0 A1 2 2 8400 3600 9600 3600 2 9600 3600 9600 6000 0 
+hades.signals.SignalStdLogic1164 n0 2 S Y i0 S 1 2 7200 7200 8400 7200 0 
+[end signals]
+[end]

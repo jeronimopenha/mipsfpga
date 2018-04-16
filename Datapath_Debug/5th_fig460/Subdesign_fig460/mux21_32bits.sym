@@ -1,0 +1,13 @@
+hades.symbols.BboxRectangle  0 0 1200 2400
+hades.symbols.Rectangle  0 0 1200 2400
+hades.symbols.BusPortSymbol 1200 1200 out
+hades.symbols.PortSymbol  600 0 S
+hades.symbols.PortLabel 150 1950 In1
+hades.symbols.BusPortSymbol 0 1800 In1
+hades.symbols.PortLabel 150 750 In0
+hades.symbols.BusPortSymbol 0 600 In0
+hades.symbols.FatLabel 600 800 2 M
+hades.symbols.FatLabel 600 1400 2 u
+hades.symbols.FatLabel 600 2000 2 x
+hades.symbols.Label 150 750 2 1
+hades.symbols.Label 150 1950 2 0

@@ -1,0 +1,29 @@
+hades.symbols.BboxRectangle  0 0 2400 22800
+hades.symbols.Rectangle  0 0 2400 22800
+hades.symbols.Polyline 2 0 2400 2400 2400
+hades.symbols.PortLabel 150 1350 wb
+hades.symbols.BusPortSymbol 0 1200 wb
+hades.symbols.PortLabel -600 11850 PortreadData
+hades.symbols.BusPortSymbol 0 11400 PortreadData
+hades.symbols.PortLabel -600 17350 aluOut
+hades.symbols.BusPortSymbol 0 16800 aluOut
+hades.symbols.PortLabel 150 20550 rd
+hades.symbols.BusPortSymbol 0 20400 rd
+hades.symbols.PortLabel 300 22700 WE
+hades.symbols.PortSymbol 600 22800 WE
+hades.symbols.PortLabel 900 22700 CLK
+hades.symbols.PortSymbol 1200 22800 CLK
+hades.symbols.PortLabel 1750 22700 R
+hades.symbols.PortSymbol 1800 22800 R
+hades.symbols.PortLabel 2350 1350 3 RegWrite
+hades.symbols.PortSymbol 2400 1200 RegWrite
+hades.symbols.PortLabel 2350 1950 3 MemtoReg
+hades.symbols.PortSymbol 2400 1800 MemtoReg
+hades.symbols.PortLabel 3000 11850 3 readData1
+hades.symbols.BusPortSymbol 2400 11400 readData1
+hades.symbols.PortLabel 3000 17350 3 aluOut1
+hades.symbols.BusPortSymbol 2400 16800 aluOut1
+hades.symbols.PortLabel 2350 20550 3 rd1
+hades.symbols.BusPortSymbol 2400 20400 rd1
+hades.symbols.InstanceLabel 600 750 MEMWBregs
+hades.symbols.ClassLabel 600 450 MEM/WB.regs
